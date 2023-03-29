@@ -1,7 +1,11 @@
-@import url(https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&amp;display=swap);
+@import url(https://fonts.googleapis.com/css2?family=Open+Sans:wght@100;200;300;400;500;600;700;800;900&amp;display=swap);
+
+:root{
+  --primary-color: #FE4400;
+}
 
 html, body {
-  font-family: "Inter", sans-serif;
+  font-family: "Poppins", sans-serif;
   font-weight: normal;
   font-style: normal;
   color: #888;
@@ -40,8 +44,8 @@ button:focus,
 }
 
 .form-check-input:checked {
-  background-color: #723fe4;
-  border-color: #723fe4
+  background-color: var(--primary-color);
+  border-color: var(--primary-color)
 }
 
 select {
@@ -890,7 +894,7 @@ ol {
   padding-top: 180px;
   z-index: 2;
   text-align: left;
-  background-color: #723fe4
+  background-color: var(--primary-color)
 }
 
 @media only screen and (min-width:768px) and (max-width:991px) {
@@ -1033,7 +1037,7 @@ ol {
   font-weight: 600;
   display: block;
   margin-bottom: 8px;
-  color: #723fe4;
+  color: var(--primary-color);
   text-transform: uppercase
 }
 
@@ -1114,7 +1118,7 @@ ol {
   bottom: -1px;
   height: 2px;
   width: 50px;
-  background: #723fe4;
+  background: var(--primary-color);
   content: ""
 }
 
@@ -1132,7 +1136,7 @@ ol {
   width: 45px;
   height: 45px;
   line-height: 45px;
-  background: #723fe4;
+  background: var(--primary-color);
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1227,7 +1231,7 @@ ol {
 
 .pagination .pagination-list li.active a,
 .pagination .pagination-list li:hover a {
-  background: #723fe4;
+  background: var(--primary-color);
   color: #fff;
   border-color: transparent
 }
@@ -1247,7 +1251,7 @@ ol {
   font-size: 15px;
   font-weight: 600;
   /* padding: 13px 30px; */
-  background-color: #723fe4;
+  background-color: var(--primary-color);
   color: #fff;
   border: none;
   -webkit-transition: .2s;
@@ -1284,9 +1288,14 @@ ol {
   margin: 0
 }
 
+.button .btn{
+  border: 2px solid transparent;
+}
+
 .button .btn:hover {
-  color: #fff;
-  background-color: #5a29c8;
+  color: #000;
+  background-color: #fff;
+  border: 2px solid #0000007c;
   -webkit-box-shadow: 0px 4px 4px #0000000f;
   box-shadow: 0px 4px 4px #0000000f
 }
@@ -1309,7 +1318,7 @@ ol {
 }
 
 .button .btn-alt:hover {
-  background-color: #723fe4 !important;
+  background-color: var(--primary-color) !important;
   color: #fff !important
 }
 
@@ -1357,7 +1366,7 @@ ol {
   width: 100px;
   height: 100px;
   border-radius: 100%;
-  background: #723fe4;
+  background: var(--primary-color);
   -webkit-animation: preloader-fx 1.6s linear infinite;
   animation: preloader-fx 1.6s linear infinite
 }
@@ -1432,11 +1441,11 @@ ol {
   }
 
   .header .navbar .navbar-nav .nav-item a:hover {
-    color: #723fe4 !important
+    color: var(--primary-color) !important
   }
 
   .header .navbar .navbar-nav .nav-item a.active {
-    color: #723fe4 !important
+    color: var(--primary-color) !important
   }
 
   .header .navbar-nav .nav-item {
@@ -1444,7 +1453,7 @@ ol {
   }
 
   .header .navbar-nav .nav-item:hover a {
-    color: #723fe4
+    color: var(--primary-color)
   }
 
   .header .navbar-nav .nav-item a {
@@ -1473,7 +1482,7 @@ ol {
   }
 
   .header .navbar-nav .nav-item .sub-menu .nav-item a:hover {
-    color: #723fe4 !important
+    color: var(--primary-color) !important
   }
 
   .header .navbar-nav .nav-item a {
@@ -1494,7 +1503,7 @@ ol {
 
   .header .navbar-nav .nav-item .sub-menu li.active {
     background: #fff !important;
-    color: #723fe4 !important
+    color: var(--primary-color) !important
   }
 
   .header .navbar-nav .nav-item .sub-menu .nav-item {
@@ -1507,7 +1516,7 @@ ol {
 
   .header .navbar-nav .nav-item .sub-menu li:hover {
     background: #fff !important;
-    color: #723fe4 !important
+    color: var(--primary-color) !important
   }
 
   .header .navbar-nav .nav-item a {
@@ -1515,7 +1524,7 @@ ol {
   }
 
   .header .navbar-nav .nav-item a:hover {
-    color: #723fe4
+    color: var(--primary-color)
   }
 }
 
@@ -1545,11 +1554,11 @@ ol {
   }
 
   .header .navbar .navbar-nav .nav-item a:hover {
-    color: #723fe4 !important
+    color: var(--primary-color) !important
   }
 
   .header .navbar .navbar-nav .nav-item a.active {
-    color: #723fe4 !important
+    color: var(--primary-color) !important
   }
 
   .header .navbar-nav .nav-item {
@@ -1557,7 +1566,7 @@ ol {
   }
 
   .header .navbar-nav .nav-item:hover a {
-    color: #723fe4
+    color: var(--primary-color)
   }
 
   .header .navbar-nav .nav-item a {
@@ -1586,7 +1595,7 @@ ol {
   }
 
   .header .navbar-nav .nav-item .sub-menu .nav-item a:hover {
-    color: #723fe4 !important
+    color: var(--primary-color) !important
   }
 
   .header .navbar-nav .nav-item a {
@@ -1607,7 +1616,7 @@ ol {
 
   .header .navbar-nav .nav-item .sub-menu li.active {
     background: #fff !important;
-    color: #723fe4 !important
+    color: var(--primary-color) !important
   }
 
   .header .navbar-nav .nav-item .sub-menu .nav-item {
@@ -1620,7 +1629,7 @@ ol {
 
   .header .navbar-nav .nav-item .sub-menu li:hover {
     background: #fff !important;
-    color: #723fe4 !important
+    color: var(--primary-color) !important
   }
 
   .header .navbar-nav .nav-item a {
@@ -1628,7 +1637,7 @@ ol {
   }
 
   .header .navbar-nav .nav-item a:hover {
-    color: #723fe4
+    color: var(--primary-color)
   }
 
   .header .button {
@@ -1646,11 +1655,11 @@ ol {
 
 .header .button .btn:hover {
   background-color: #fff;
-  color: #723fe4
+  color: var(--primary-color)
 }
 
 .header .navbar-brand img {
-  width: 170px
+  width: 10%
 }
 
 @media only screen and (min-width:768px) and (max-width:991px) {
@@ -1676,7 +1685,7 @@ ol {
 }
 
 .header.sticky .button .btn {
-  background-color: #723fe4;
+  background-color: var(--primary-color);
   color: #fff;
   border-color: transparent
 }
@@ -1708,7 +1717,7 @@ ol {
 }
 
 .sticky .navbar .navbar-nav .nav-item a.active {
-  color: #723fe4
+  color: var(--primary-color)
 }
 
 .sticky .navbar .navbar-nav .nav-item a {
@@ -1738,7 +1747,7 @@ ol {
 .navbar-area.sticky {
   position: fixed;
   z-index: 99;
-  background: #723fe4;
+  background: var(--primary-color);
   -webkit-box-shadow: 0 20px 50px 0 rgba(0, 0, 0, .05);
   box-shadow: 0 20px 50px 0 rgba(0, 0, 0, .05);
   -webkit-transition: all .3s ease-out 0s;
@@ -1812,7 +1821,7 @@ ol {
 }
 
 .sticky .navbar-nav .nav-item:hover a {
-  color: #723fe4
+  color: var(--primary-color)
 }
 
 .navbar-nav .nav-item a {
@@ -1940,7 +1949,7 @@ ol {
 }
 
 .navbar-nav .nav-item .sub-menu .nav-item a:hover {
-  color: #723fe4
+  color: var(--primary-color)
 }
 
 .navbar-nav .nav-item .sub-menu.left-menu {
@@ -1968,7 +1977,7 @@ ol {
 }
 
 .navbar-nav .nav-item .sub-menu>li.active>a {
-  color: #723fe4 !important
+  color: var(--primary-color) !important
 }
 
 .navbar-nav .nav-item .sub-menu>li>a {
@@ -1998,7 +2007,7 @@ ol {
 .image-one {
   position: relative;
   padding: 220px 0 250px 0;
-  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("../images/hero/hero-bg.jpg");
+  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("../images/hero/Solar_Panel_Repair_Maintenance_Image-1024x662.jpg");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -2036,7 +2045,7 @@ ol {
 }
 
 .hero-area.overlay::before {
-  background: #723fe4;
+  background: var(--primary-color);
   opacity: .9
 }
 
@@ -2082,7 +2091,7 @@ ol {
 
 .hero-area .hero-content .button .btn {
   background-color: #fff;
-  color: #723fe4;
+  color: var(--primary-color);
   margin-right: 12px
 }
 
@@ -2098,7 +2107,7 @@ ol {
 
 .hero-area .hero-content .button .btn.btn-alt:hover {
   background-color: #fff !important;
-  color: #723fe4 !important
+  color: var(--primary-color) !important
 }
 
 @media only screen and (min-width:992px) and (max-width:1199px) {
@@ -2194,7 +2203,7 @@ ol {
 }
 
 .small-features .single-feature i {
-  color: #723fe4;
+  color: var(--primary-color);
   font-size: 35px;
   position: absolute;
   left: 40px;
@@ -2265,13 +2274,18 @@ ol {
   transform: translateY(-5px)
 }
 
-.features .single-feature i {
+.insurance img{
+  width: 50%;
+  filter: invert(1);
+}
+
+.features .single-feature i, .insurance {
   height: 60px;
   width: 60px;
   line-height: 60px;
   text-align: center;
   display: inline-block;
-  background-color: #723fe4;
+  background-color: var(--primary-color);
   color: #fff;
   font-size: 20px;
   border-radius: 7px;
@@ -2309,7 +2323,7 @@ ol {
   width: 80px;
   line-height: 80px;
   text-align: center;
-  color: #723fe4;
+  color: var(--primary-color);
   background-color: #fff;
   border-radius: 50%;
   left: 50%;
@@ -2324,7 +2338,7 @@ ol {
 
 .about-us .content-left .video:hover {
   color: #fff;
-  background-color: #723fe4;
+  background-color: var(--primary-color);
   -webkit-transform: scale(1.05);
   transform: scale(1.05)
 }
@@ -2470,7 +2484,7 @@ ol {
 }
 
 .about-us .content-right .list li i {
-  color: #723fe4;
+  color: var(--primary-color);
   font-size: 15px;
   display: inline-block;
   position: absolute;
@@ -2487,7 +2501,7 @@ ol {
 }
 
 .our-achievement {
-  background-color: #723fe4;
+  background-color: var(--primary-color);
   text-align: center;
   padding: 130px 0
 }
@@ -2523,7 +2537,7 @@ ol {
 
 .our-achievement .single-achievement h3 {
   font-size: 35px;
-  font-weight: 800;
+  font-weight: 700;
   display: block;
   margin-bottom: 5px;
   color: #fff
@@ -2553,7 +2567,7 @@ ol {
 }
 
 .testimonials {
-  background-color: #f9f9f9;
+  background-color: #fff;
   position: relative;
   overflow: hidden
 }
@@ -2594,11 +2608,11 @@ ol {
 }
 
 .testimonials .tns-nav button:hover {
-  background: #723fe4
+  background: var(--primary-color)
 }
 
 .testimonials .tns-nav button.tns-nav-active {
-  background: #723fe4;
+  background: var(--primary-color);
   width: 25px
 }
 
@@ -2764,7 +2778,7 @@ ol {
 }
 
 .pricing-table .single-table .table-head .button .btn:hover {
-  background-color: #723fe4;
+  background-color: var(--primary-color);
   color: #fff
 }
 
@@ -2791,7 +2805,7 @@ ol {
 }
 
 .pricing-table .single-table .table-content .table-list li i {
-  color: #723fe4;
+  color: var(--primary-color);
   font-size: 14px;
   position: absolute;
   left: 0;
@@ -2905,14 +2919,14 @@ ol {
 
 .accordion-button:not(.collapsed) {
   color: #fff;
-  background-color: #723fe4;
+  background-color: var(--primary-color);
   border-color: transparent;
   border-radius: 8px 8px 0 0
 }
 
 .accordion-button:not(.collapsed) .serial {
   background-color: #fff;
-  color: #723fe4;
+  color: var(--primary-color);
   border-color: transparent
 }
 
@@ -2966,7 +2980,7 @@ ol {
 
 .call-action {
   padding: 80px 0;
-  background-color: #fff
+  background-color: #f9f9f9
 }
 
 @media only screen and (min-width:768px) and (max-width:991px) {
@@ -3002,7 +3016,7 @@ ol {
 
 .call-action .text h2 span {
   display: block;
-  color: #723fe4
+  color: var(--primary-color)
 }
 
 .call-action .button {
@@ -3077,7 +3091,7 @@ ol {
 
 .blog-section .single-blog .blog-content .category {
   font-size: 14px;
-  color: #723fe4;
+  color: var(--primary-color);
   display: inline-block;
   font-weight: 600
 }
@@ -3095,7 +3109,7 @@ ol {
 }
 
 .blog-section .single-blog .blog-content h4 a:hover {
-  color: #723fe4
+  color: var(--primary-color)
 }
 
 .blog-section .single-blog .blog-content p {
@@ -3127,7 +3141,7 @@ ol {
 }
 
 .blog-section .single-blog .blog-content .autor .name:hover {
-  color: #723fe4
+  color: var(--primary-color)
 }
 
 .blog-section .single-blog .blog-content .autor .meta-content {
@@ -3148,7 +3162,7 @@ ol {
 }
 
 .blog-section .single-blog .blog-content .autor .meta-content li a:hover {
-  color: #723fe4
+  color: var(--primary-color)
 }
 
 .blog-section .single-blog .blog-content .autor .meta-content li::before {
@@ -3275,7 +3289,7 @@ ol {
 }
 
 .blog-single .meta-info li a:hover {
-  color: #723fe4
+  color: var(--primary-color)
 }
 
 .blog-single .meta-info li a img {
@@ -3339,7 +3353,7 @@ ol {
 }
 
 .blog-single .post-title a:hover {
-  color: #723fe4
+  color: var(--primary-color)
 }
 
 .blog-single p {
@@ -3380,7 +3394,7 @@ ol {
   top: 4px;
   color: #fff;
   font-size: 15px;
-  color: #723fe4
+  color: var(--primary-color)
 }
 
 blockquote {
@@ -3407,7 +3421,7 @@ blockquote {
 
 blockquote .icon i {
   font-size: 32px;
-  color: #723fe4;
+  color: var(--primary-color);
   display: block;
   margin-bottom: 20px
 }
@@ -3474,11 +3488,11 @@ blockquote span {
 }
 
 .post-details .post-social-media ul li a:hover {
-  color: #723fe4
+  color: var(--primary-color)
 }
 
 .post-details .post-social-media ul li a span {
-  background-color: #723fe4;
+  background-color: var(--primary-color);
   color: #fff;
   font-size: 12px;
   font-weight: 400;
@@ -3501,7 +3515,7 @@ blockquote span {
   left: 50%;
   margin-left: -5px;
   bottom: -10px;
-  border: 5px solid #723fe4;
+  border: 5px solid var(--primary-color);
   border-bottom-color: transparent;
   border-right-color: transparent;
   border-left-color: transparent
@@ -3612,7 +3626,7 @@ blockquote span {
 }
 
 .post-comments .comments-list li .comment-desc .desc-top .reply-link:hover {
-  color: #723fe4
+  color: var(--primary-color)
 }
 
 .post-comments .comments-list li .comment-desc .desc-top .reply-link i {
@@ -3793,7 +3807,7 @@ blockquote span {
   border-radius: 5px;
   padding: 0 !important;
   border: none;
-  background: #723fe4
+  background: var(--primary-color)
 }
 
 .sidebar .widget.search-widget form button:hover {
@@ -3834,7 +3848,7 @@ blockquote span {
 }
 
 .sidebar .widget.popular-feeds .single-popular-feed .feed-desc .cetagory:hover {
-  color: #723fe4
+  color: var(--primary-color)
 }
 
 .sidebar .widget.popular-feeds .single-popular-feed .feed-desc .feed-img {
@@ -3861,7 +3875,7 @@ blockquote span {
 }
 
 .sidebar .widget.popular-feeds .single-popular-feed .feed-desc .post-title a:hover {
-  color: #723fe4
+  color: var(--primary-color)
 }
 
 .sidebar .widget.popular-feeds .single-popular-feed .feed-desc .time {
@@ -3896,7 +3910,7 @@ blockquote span {
 }
 
 .sidebar .widget.categories-widget ul li a:hover {
-  color: #723fe4;
+  color: var(--primary-color);
   padding-left: 10px
 }
 
@@ -3915,7 +3929,7 @@ blockquote span {
   text-transform: capitalize;
   font-size: 14px;
   font-weight: 400;
-  background: #723fe4;
+  background: var(--primary-color);
   margin-right: 5px;
   margin-bottom: 10px;
   color: #fff;
@@ -3926,7 +3940,7 @@ blockquote span {
 }
 
 .popular-tag-widget .tags>a:hover {
-  background-color: #723fe4;
+  background-color: var(--primary-color);
   color: #fff;
   border-color: transparent
 }
@@ -3939,7 +3953,7 @@ blockquote span {
   color: #081828;
   font-size: 24px;
   font-weight: 700;
-  color: #723fe4;
+  color: var(--primary-color);
   margin: 0
 }
 
@@ -3981,7 +3995,7 @@ blockquote span {
 }
 
 .services {
-  background-color: #723fe4
+  background-color: #F8F8F8;
 }
 
 .services.style2 {
@@ -3997,7 +4011,7 @@ blockquote span {
 }
 
 .services.style2 .section-title h3 {
-  color: #723fe4
+  color: var(--primary-color)
 }
 
 .services.style2 .section-title p {
@@ -4006,15 +4020,17 @@ blockquote span {
 
 .services.style2 .single-service i {
   color: #fff;
-  background-color: #723fe4
+  background-color: var(--primary-color)
 }
 
-.services.style2 .single-service h3 a {
-  color: #081828
+.single-service h3 {
+  color: rgb(8, 24, 40);
+  font-size: 18px;
+  /* font-weight: bold; */
 }
 
 .services.style2 .single-service h3 a:hover {
-  color: #723fe4
+  color: var(--primary-color)
 }
 
 .services.style2 .single-service p {
@@ -4025,16 +4041,8 @@ blockquote span {
   margin-bottom: 20px
 }
 
-.services .section-title h2 {
-  color: #fff
-}
-
-.services .section-title h3 {
-  color: #fff
-}
-
-.services .section-title p {
-  color: #fff
+.services .section-title p, .services .section-title h3, .services .section-title h2 {
+  color: #353535
 }
 
 .services .single-service {
@@ -4056,8 +4064,8 @@ blockquote span {
 }
 
 .services .single-service i {
-  color: #723fe4;
-  background-color: #fff;
+  color: #fff;
+  background-color: var(--primary-color);
   border-radius: 6px;
   height: 50px;
   width: 50px;
@@ -4161,7 +4169,7 @@ blockquote span {
   top: 4px;
   color: #fff;
   font-size: 15px;
-  color: #723fe4
+  color: var(--primary-color)
 }
 
 .service-sidebar .single-widget {
@@ -4207,7 +4215,7 @@ blockquote span {
 }
 
 .service-sidebar .single-widget.service-category ul li a:hover {
-  color: #723fe4;
+  color: var(--primary-color);
   padding-left: 8px
 }
 
@@ -4238,7 +4246,7 @@ blockquote span {
 }
 
 .service-sidebar .single-widget.pdf-download h4 span {
-  color: #723fe4;
+  color: var(--primary-color);
   font-size: 14px;
   display: block;
   margin-bottom: 5px
@@ -4258,7 +4266,7 @@ blockquote span {
 
 .service-sidebar .single-widget.service-cta .support-icon i {
   font-size: 35px;
-  color: #723fe4
+  color: var(--primary-color)
 }
 
 .service-sidebar .single-widget.service-cta h4 {
@@ -4284,11 +4292,15 @@ blockquote span {
 }
 
 .service-sidebar .single-widget.service-cta ul li a:hover {
-  color: #723fe4
+  color: var(--primary-color)
 }
 
 .service-sidebar .single-widget.service-cta .button {
   margin-top: 30px
+}
+
+.team{
+  background-color: #F8F8F8;
 }
 
 .team .section-title {
@@ -4336,7 +4348,7 @@ blockquote span {
 .team .single-team .text h5 {
   font-size: 14px;
   font-weight: 400;
-  color: #723fe4;
+  color: var(--primary-color);
   display: block;
   margin-top: 4px
 }
@@ -4367,7 +4379,7 @@ blockquote span {
 }
 
 .team .single-team .social li a:hover {
-  color: #723fe4
+  color: var(--primary-color)
 }
 
 @media only screen and (min-width:768px) and (max-width:991px),
@@ -4439,13 +4451,13 @@ blockquote span {
 }
 
 .portfolio-section .portfolio-btn-wrapper button:hover {
-  background-color: #723fe4;
+  background-color: var(--primary-color);
   border-color: transparent;
   color: #fff
 }
 
 .portfolio-section .portfolio-btn-wrapper button.active {
-  background: #723fe4 !important;
+  background: var(--primary-color) !important;
   color: #fff;
   border-color: transparent
 }
@@ -4471,7 +4483,7 @@ blockquote span {
   content: "";
   right: 0;
   top: 0;
-  background-color: #723fe4;
+  background-color: var(--primary-color);
   height: 100%;
   width: 100%;
   z-index: 5;
@@ -4527,12 +4539,12 @@ blockquote span {
   position: absolute;
   bottom: 30px;
   left: 30px;
-  color: #723fe4
+  color: var(--primary-color)
 }
 
 .portfolio-section .pf-content .more-icon:hover {
   background-color: #fff;
-  color: #723fe4;
+  color: var(--primary-color);
   border-color: transparent
 }
 
@@ -4783,7 +4795,7 @@ blockquote span {
 }
 
 .contact-us .contact-info .single-info:hover {
-  background-color: #723fe4
+  background-color: var(--primary-color)
 }
 
 .contact-us .contact-info .single-info:hover i {
@@ -4809,7 +4821,7 @@ blockquote span {
 
 .contact-us .contact-info .single-info i {
   font-size: 30px;
-  color: #723fe4;
+  color: var(--primary-color);
   position: absolute;
   left: 40px;
   top: 40px;
@@ -4846,7 +4858,7 @@ blockquote span {
 }
 
 .contact-us .contact-info .single-info ul li a:hover {
-  color: #723fe4
+  color: var(--primary-color)
 }
 
 .contact-form-head {
@@ -4865,7 +4877,7 @@ blockquote span {
   top: 0;
   height: 100%;
   width: 60%;
-  background-color: #723fe4;
+  background-color: var(--primary-color);
   z-index: -1
 }
 
@@ -5104,7 +5116,7 @@ blockquote span {
 
 .error-area .error-content h1 {
   font-size: 100px;
-  color: #723fe4;
+  color: var(--primary-color);
   margin-bottom: 25px;
   font-weight: 800;
   line-height: 100px
@@ -5177,12 +5189,12 @@ blockquote span {
 .maill-success .success-content i {
   font-size: 40px;
   margin-bottom: 20px;
-  color: #723fe4
+  color: var(--primary-color)
 }
 
 .maill-success .success-content h1 {
   font-size: 40px;
-  color: #723fe4;
+  color: var(--primary-color);
   margin-bottom: 10px;
   font-weight: 700
 }
@@ -5309,7 +5321,7 @@ blockquote span {
 }
 
 .footer .single-footer.f-about .social li a:hover {
-  color: #723fe4
+  color: var(--primary-color)
 }
 
 .footer .single-footer.f-about .social li:last-child {
@@ -5333,7 +5345,7 @@ blockquote span {
 }
 
 .footer .single-footer.f-about .copyright-text a:hover {
-  color: #723fe4
+  color: var(--primary-color)
 }
 
 .footer .single-footer.f-link li {
@@ -5352,7 +5364,7 @@ blockquote span {
 }
 
 .footer .single-footer.f-link li a:hover {
-  color: #723fe4
+  color: var(--primary-color)
 }
 
 .footer .single-footer h3 {
@@ -5453,7 +5465,7 @@ blockquote span {
 }
 
 .footer .footer-newsletter .title p a {
-  color: #723fe4;
+  color: var(--primary-color);
   text-decoration: underline
 }
 
@@ -5554,7 +5566,7 @@ blockquote span {
 
 .footer .footer-newsletter .newsletter-form .button .btn {
   display: inline-block;
-  background: #723fe4;
+  background: var(--primary-color);
   color: #fff;
   height: 48px;
   line-height: 48px;
@@ -5566,6 +5578,6 @@ blockquote span {
 }
 
 .footer .footer-newsletter .newsletter-form .button .btn:hover {
-  color: #723fe4;
+  color: var(--primary-color);
   background-color: #fff
 }
