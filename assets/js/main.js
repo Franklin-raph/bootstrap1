@@ -73,3 +73,8 @@ Author: GrayGrids
     navbarToggler.classList.toggle("active");
   });
 })();
+
+$(".counter").counterUp({
+  delay: 20,
+  time: 1000,
+});
